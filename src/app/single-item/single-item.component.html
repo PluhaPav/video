@@ -1,0 +1,28 @@
+<div *ngIf="item" [ngClass]="{film:true}">
+    <div [ngClass]="{film__column:true}">
+        <div [ngClass]="{film__img:true}">
+            <img src="{{item.poster_path}}" alt="">
+        </div>
+    </div>
+    <div [ngClass]="{film__column:true}">
+        <div [ngClass]="{film__title:true}">
+            <h1>{{item.title}}</h1>
+        </div>
+        <div [ngClass]="{film__oscar:true}">
+            <span>{{item.genres}}</span>
+        </div>
+        <div [ngClass]="{film__line:true}">
+            <div [ngClass]="{film__year:true}">
+                <span> {{item.release_date | date:'yyyy'}}</span>
+            </div>
+            <div [ngClass]="{film__minuts:true}">
+                <span> {{item.runtime}} min</span>
+            </div>
+        </div>
+        <div [ngClass]="{film__description:true}">
+            <p>{{item.overview}}</p>
+        </div>
+    </div>
+</div>
+
+<app-loader *ngIf="visible"></app-loader>

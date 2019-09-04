@@ -1,0 +1,12 @@
+$colorLogo: #d64949;
+.logo {
+    &__name {
+        color: #{$colorLogo};
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__link {
+        color: inherit;
+        text-decoration: unset;
+    }
+}

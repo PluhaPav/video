@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 10px 0;
+}
+
+.lineSort {
+    width: 80%;
+    display: flex;
+    &__column {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        &:nth-child(2) {
+            justify-content: flex-end;
+            @media screen and (max-width: 450px) {
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    &__found {
+        font-weight: 900;
+    }
+    &__by {
+        padding: 0 10px;
+    }
+    &__release {
+        padding: 0 10px;
+        cursor: pointer;
+        &--active {
+            color: #d64949;
+        }
+    }
+    &__rating {
+        padding: 0 0 0 10px;
+        cursor: pointer;
+        &--active {
+            color: #d64949;
+        }
+    }
+}

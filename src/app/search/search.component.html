@@ -1,0 +1,24 @@
+<div [ngClass]="{search:true}">
+    <div [ngClass]="{search__title:true}">
+        <h3>Find you movie</h3>
+    </div>
+    <div [ngClass]="{search__contain:true}">
+        <form action="GET" [ngClass]="{search__form:true}">
+            <input [(ngModel)]="valueSearch" type="search" name="search" class="search__input" id="search" placeholder="Enter movie name">
+            <div [ngClass]="{search__buttonsContain:true}">
+                <div [ngClass]="{search__order:true}">
+                    <span [ngClass]="{search__orderTitle:true}">
+                        search by
+                    </span>
+                    <div (click)="sortByTitle()" [ngClass]="{search__orderByTitle:true,'search__orderByTitle--active':true, button:true}">
+                        Title
+                    </div>
+                    <div (click)="sortByGenre()" [ngClass]="{search__orderByGenre:true, button:true}">
+                        Genre
+                    </div>
+                </div>
+                <div (click)="onClickSearchButton($event)" [ngClass]="{search__button:true, button:true}">search</div>
+            </div>
+        </form>
+    </div>
+</div>

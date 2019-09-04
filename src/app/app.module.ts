@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderModule } from './header/header.module';
+import { LineSortModule } from './line-sort/line-sort.module';
+import { ItemsModule } from './items/items.module';
+import { HttpClientModule } from '@angular/common/http';
+import { LoaderModule } from './loader/loader.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HeaderModule,
+    ItemsModule,
+    LineSortModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<div [ngClass]="{lineSort:true}">
+    <div [ngClass]="{lineSort__column:true}">
+        <div [ngClass]="{lineSort__found:true}">
+            <span>{{quantityFound}} movies found</span>
+        </div>
+    </div>
+    <div [ngClass]="{lineSort__column:true}">
+        <span [ngClass]="{lineSort__by: true}">Sort by:</span>
+        <div [ngClass]="{lineSort__release: true, 'lineSort__release--active':true}" (click)="onClickRelease()">release date</div>
+        <div [ngClass]="{lineSort__rating: true}" (click)="onClickRating()">rating</div>
+    </div>
+</div>

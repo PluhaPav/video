@@ -1,0 +1,21 @@
+:host {
+    width: 100%;
+}
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        padding: 40px;
+    }
+    &__navigation {}
+    &__menu {
+        list-style: none;
+        padding-left: 0;
+    }
+}

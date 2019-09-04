@@ -1,0 +1,74 @@
+$justifyContent: space-between !default;
+$paddingButton: 5px 10px !default;
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justifyContent;
+}
+
+.button {
+    padding: $paddingButton;
+    margin: 0 0 0 10px;
+    background: #847a7a;
+    cursor: pointer;
+    &:hover {
+        background: #d64949;
+    }
+}
+
+.search {
+    color: #fff;
+    text-transform: uppercase;
+    &__title {
+        padding: 0;
+    }
+    &__contain {
+        padding: 0px;
+    }
+    &__form {
+        padding: 0;
+    }
+    &__input {
+        height: 45px;
+        width: 100%;
+        background: #000000;
+        border-color: #000 #000 #d64949;
+        font-size: 20px;
+        color: #fff;
+        padding: 0 10px;
+    }
+    &__input::after {
+        content: '\21B5';
+    }
+    &__buttonsContain {
+        padding: 20px 0;
+        @include flex;
+        @media screen and (max-width: 450px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__order {
+        padding: 0;
+        @include flex;
+    }
+    &__orderTitle {
+        padding: 5px 10px 5px 0;
+    }
+    &__orderByTitle {
+        &--active {
+            background: #d64949;
+        }
+    }
+    &__orderByGenre {
+        &--active {
+            background: #d64949;
+        }
+    }
+    &__button {
+        padding: 5px 30px;
+        @media screen and (max-width: 450px) {
+            text-align: center;
+            margin: 10px 0 20px;
+        }
+    }
+}

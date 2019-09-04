@@ -1,0 +1,15 @@
+$urlBaner: '/assets/image/baner.jpg';
+$maskColor: rgba(0, 0, 0, 0.8);
+.header {
+    display: flex;
+    justify-content: center;
+    background-image: url(#{$urlBaner});
+    box-shadow: 0 0 0 500px #{$maskColor} inset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
