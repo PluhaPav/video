@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { SearchComponent } from './search/search.component';
-import { SingleItemComponent } from './single-item/single-item.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SearchComponent } from './components/search/search.component';
+import { DetailMovieComponent } from './components/detail-movie/detail-movie.component';
 
 
 export const routes: Routes = [
@@ -13,7 +13,7 @@ export const routes: Routes = [
   },
   {
     path: "movies/:id",
-    component: SingleItemComponent,
+    component: DetailMovieComponent,
     pathMatch: "full"
   },
   { path: "**", component: NotFoundComponent, pathMatch: "full" }

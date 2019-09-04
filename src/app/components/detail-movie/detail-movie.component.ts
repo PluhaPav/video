@@ -1,17 +1,16 @@
 import { Component, OnInit, OnDestroy, DoCheck } from '@angular/core';
-import { ListService } from '../service/list/list-service.service';
+import { ListService } from '../../service/list/list-service.service';
 import { ActivatedRoute } from '@angular/router';
-import { IMovies } from '../interfaces/movies';
+import { IMovies } from '../../interfaces/movies';
 import { SubscriptionLike } from 'rxjs';
-import { IDataMovies } from '../interfaces/dataMovies';
-import { LoaderService } from '../service/loader/loader.service';
+import { LoaderService } from '../../service/loader/loader.service';
 
 @Component({
-  selector: 'app-single-item',
-  templateUrl: './single-item.component.html',
-  styleUrls: ['./single-item.component.scss']
+  selector: 'app-detail-movie',
+  templateUrl: './detail-movie.component.html',
+  styleUrls: ['./detail-movie.component.scss']
 })
-export class SingleItemComponent implements OnInit, DoCheck, OnDestroy {
+export class DetailMovieComponent implements OnInit, DoCheck, OnDestroy {
 
   private subscriptions: SubscriptionLike[] = [];
   private paramsId: number;

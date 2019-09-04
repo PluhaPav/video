@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 import { LogoModule } from '../logo/logo.module';
 import { SearchModule } from '../search/search.module';
-import { SingleItemModule } from '../single-item/single-item.module';
-import { routes, AppRoutingModule } from '../app-routing.module';
+import { DetailMovieModule } from '../detail-movie/detail-movie.module';
+import { routes, AppRoutingModule } from '../../app-routing.module';
 import { RouterModule } from '@angular/router';
 
 
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     LogoModule,
     SearchModule,
-    SingleItemModule
+    DetailMovieModule
   ],
   exports: [HeaderComponent]
 })

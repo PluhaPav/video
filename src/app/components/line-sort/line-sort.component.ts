@@ -1,6 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import { ListService } from '../service/list/list-service.service';
-import { ListSortService } from '../service/listSort/list-sort.service';
+import { ListService } from '../../service/list/list-service.service';
 
 @Component({
   selector: 'app-line-sort',

@@ -1,19 +1,18 @@
 import { NgModule, OnDestroy, DoCheck } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { ListService } from '../service/list/list-service.service';
+import { ListService } from '../../service/list/list-service.service';
 import { SubscriptionLike } from 'rxjs';
-import { IDataMovies } from '../interfaces/dataMovies';
-import { IMovies } from '../interfaces/movies';
+import { IDataMovies } from '../../interfaces/dataMovies';
+import { IMovies } from '../../interfaces/movies';
 import { SearchPipe } from '../search/pipe/search.pipe';
-import { LoaderService } from '../service/loader/loader.service';
-import { ListSortService } from '../service/listSort/list-sort.service';
+import { ListSortService } from '../../service/listSort/list-sort.service';
 
 @Component({
-  selector: 'app-items',
-  templateUrl: './items.component.html',
-  styleUrls: ['./items.component.scss']
+  selector: 'app-movies',
+  templateUrl: './movies.component.html',
+  styleUrls: ['./movies.component.scss']
 })
-export class ItemsComponent implements OnInit, OnDestroy, DoCheck {
+export class MoviesComponent implements OnInit, OnDestroy, DoCheck {
 
   private subscriptions: SubscriptionLike[] = [];
   private arrayItemsDefault: IMovies[] = [];

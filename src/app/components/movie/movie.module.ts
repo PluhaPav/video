@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ItemComponent } from './item.component';
+import { MovieComponent } from './movie.component';
 import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [ItemComponent],
+  declarations: [MovieComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [ItemComponent]
+  exports: [MovieComponent]
 })
-export class ItemModule { }
+export class MovieModule { }

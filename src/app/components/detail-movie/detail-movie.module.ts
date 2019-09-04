@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SingleItemComponent } from './single-item.component';
+import { DetailMovieComponent } from './detail-movie.component';
 import { LoaderModule } from '../loader/loader.module';
 
 
 
 @NgModule({
-  declarations: [SingleItemComponent],
+  declarations: [DetailMovieComponent],
   imports: [
     CommonModule,
     LoaderModule
   ],
-  exports: [SingleItemComponent]
+  exports: [DetailMovieComponent]
 })
-export class SingleItemModule { }
+export class DetailMovieModule { }

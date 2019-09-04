@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { IMovies } from 'src/app/interfaces/movies';
-import { first } from 'rxjs/operators';
 import { ListService } from '../list/list-service.service';
 
 @Injectable({

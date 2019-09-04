@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
-import { LineSortModule } from './line-sort/line-sort.module';
-import { ItemsModule } from './items/items.module';
+import { HeaderModule } from './components/header/header.module';
+import { LineSortModule } from './components/line-sort/line-sort.module';
 import { HttpClientModule } from '@angular/common/http';
-import { LoaderModule } from './loader/loader.module';
+import { MoviesModule } from './components/movies/movies.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,7 @@ import { LoaderModule } from './loader/loader.module';
   imports: [
     BrowserModule,
     HeaderModule,
-    ItemsModule,
+    MoviesModule,
     LineSortModule,
     HttpClientModule
   ],

@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { fromEvent, timer, throwError } from 'rxjs';
 import { debounce, catchError, tap } from 'rxjs/operators';
-import { filter } from 'minimatch';
 import { SearchPipe } from './pipe/search.pipe';
-import { MySearchEvent } from '../interfaces/mySearchEvent';
-import { ListService } from '../service/list/list-service.service';
+import { MySearchEvent } from '../../interfaces/mySearchEvent';
+import { ListService } from '../../service/list/list-service.service';
 
 @Component({
   selector: 'app-search',
