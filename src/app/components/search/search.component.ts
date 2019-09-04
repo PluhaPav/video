@@ -27,8 +27,7 @@ export class SearchComponent implements OnInit {
   
   onClickSearchButton(event: Event) {
     event.preventDefault();
-    this.searchInput = document.querySelector('.search__input');
-    this.searchKeyUp(this.searchInput);
+    this.searchPipe.changeSearchValue(this.valueSearch);
     console.log('searchClick');
   }
 

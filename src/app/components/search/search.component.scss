@@ -66,6 +66,9 @@ $paddingButton: 5px 10px !default;
     }
     &__button {
         padding: 5px 30px;
+        border: 0;
+        font-size: 17px;
+        color: #fff;
         @media screen and (max-width: 450px) {
             text-align: center;
             margin: 10px 0 20px;

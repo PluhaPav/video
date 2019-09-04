@@ -12,7 +12,7 @@ import { LoaderService } from '../loader/loader.service';
 })
 export class ListService {
 
-  private urlApi: string = "http://react-cdp-api.herokuapp.com/movies";
+  private urlApi: string = "https://react-cdp-api.herokuapp.com/movies";
   private limit: number = 20;
   private sortBy: string = "release_date";
   private searchBy: string = "title";
